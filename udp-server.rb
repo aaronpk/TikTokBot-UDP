@@ -18,6 +18,7 @@ $config['ports'].each do |port|
 
       cleantext = text.gsub(/\x03\d{1,2}/,'').gsub(/\x03/,'')
       
+      # TODO: move channel names to config file
       # Route wiki edits to different channels based on the page or uploaded file name
       if channel == '#indieweb-dev'
         filename = nil
